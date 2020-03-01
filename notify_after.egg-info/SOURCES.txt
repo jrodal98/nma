@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+notify-after/__init__.py
+notify-after/__main__.py
+notify-after/exclamation-mark.png
+notify-after/hourglass.png
+notify-after/notify_decorator.py
+notify-after/send_notification.py
+notify_after.egg-info/PKG-INFO
+notify_after.egg-info/SOURCES.txt
+notify_after.egg-info/dependency_links.txt
+notify_after.egg-info/top_level.txt

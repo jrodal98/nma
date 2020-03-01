@@ -9,19 +9,25 @@
         - `brew install terminal-notifier`
 - python 3.6+
 
+## Installation
+
+enter the `notify-after` directory and run `python3 -m pip install .`
+
 ## About
 
-This python package contains a python shell script (and decorator) that sends a desktop notification whenever a shell process or decorated function finishes execution.  This can be used inside of python scripts (see my [sms-decorator](../sms-decorator/) for an explanation of how to use decorators) or it can be used with shell scripting like so (NOTE - notify-after is the directory name):
+This python package contains a python shell script (and decorator) that sends a desktop notification whenever a shell process or decorated function finishes execution. 
 
-`python3 /path/to/notify-after "echo test"`
+## Examples
 
-or
+### In shell scripts
+
+`notify-after "echo test"`
+
 
 `notify-after "sudo pacman -Syu"`
 
-or inside the directory itself
 
-`python3 /path/to/notify-after . "sleep 1; echo test"`
+`notify-after "sleep 1; echo test"`
 
 or in actual scripts:
 
@@ -32,7 +38,15 @@ my_func () {
     echo "nice"   
 }
 
-python /path/to/notify-after my_func
+notify-after my_func
 ```
 
-It can, of course, also be used as a decorator.  Some examples of using decorators can be found in my [sms-decorator](../sms-decorator/) - the principle here is the same.
+### Decorator
+
+```python
+from notifyafter.notify_decorator import notify_after
+@notify_after
+def test():
+    print("basic test")
+```
+

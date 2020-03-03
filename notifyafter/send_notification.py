@@ -30,7 +30,8 @@ if platform.system() == "Linux":
             .communicate()[0].strip():
         def send_notification(title, message, error=False):
             icon = ERROR_ICON if error else TIME_ICON
-            urgency = "critical" if error else "normal"
+            # urgency = "critical" if error else "normal"
+            urgency = "critical"
             subprocess.run(
                 ["notify-send", "-i", icon,
                     "-u", urgency, title, message])

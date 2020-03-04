@@ -38,7 +38,7 @@ if platform.system() == "Linux":
     else:
         def send_notification(titile, message, error=False):
             raise NotifierNotFoundException.generate("notify-send")
-elif platform.system == "Darwin":
+elif platform.system() == "Darwin":
     if subprocess.Popen(["which", "terminal-notifier"],
                         stdout=subprocess.PIPE) \
             .communicate()[0].strip():

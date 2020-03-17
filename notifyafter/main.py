@@ -18,6 +18,9 @@ def call_from_shell(argv):
                           "shell command not provided", error=True)
     except subprocess.CalledProcessError as e:
         send_notification("notify-after error", str(e), error=True)
+    except KeyboardInterrupt:
+        send_notification("notify-after error", "Keyboard Interrupt",
+                          error=True)
     except Exception as e:
         send_notification("notify-after error", str(e), error=True)
     sys.exit(1)

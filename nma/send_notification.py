@@ -15,13 +15,13 @@ TIME_ICON = pathlib.Path.joinpath(_directory, "hourglass.png")
 class NotifierNotFoundException(Exception):
     @staticmethod
     def generate(program):
-        return NotifierNotFoundException(f"{program} not found. Please install {program} and then try again. If this is a mistake, please submit an issue here: REPO")
+        return NotifierNotFoundException(f"{program} not found. Please install {program} and then try again. If this is a mistake, please submit an issue here: https://github.com/jrodal98/nma")
 
 
 class UnsupportedPlatformException(Exception):
     @staticmethod
     def generate():
-        return UnsupportedPlatformException(f"Your system doesn't appear to be supported (only Linux and MacOS are). If this is a mistake, please submit an issue here: REPO")
+        return UnsupportedPlatformException(f"Your system doesn't appear to be supported (only Linux and MacOS are). If this is a mistake, please submit an issue here: https://github.com/jrodal98/nma")
 
 
 if platform.system() == "Linux":

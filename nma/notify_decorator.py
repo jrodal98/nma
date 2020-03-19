@@ -15,11 +15,13 @@ def notify_after(wrapped_func):
     def wrapper(*args, **kwargs):
         res = wrapped_func(*args, **kwargs)
         try:
-            process = "Python"
             name = wrapped_func.__name__
             if name == "call_from_shell":
-                name = process = args[0][1]
-            title = f"{process} execution completed"
+                if args[0][1] == "-":
+                    name = "nma from stdin"
+                else:
+                    name = args[0][1]
+            title = "nma notification"
             message = f"'{name}' has finished executing."
             send_notification(title, message)
         except Exception as e:

@@ -12,7 +12,12 @@ def call_from_shell(argv):
     try:
         if len(argv) < 2:
             raise IndexError
-        return subprocess.run(argv[1], shell=True, check=True)
+        if argv[1] == "-":
+            for line in sys.stdin:
+                sys.stdout.write(line)
+            return 0
+        else:
+            return subprocess.run(argv[1], shell=True, check=True)
     except IndexError:
         send_notification("nma error",
                           "shell command not provided", error=True)

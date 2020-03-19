@@ -1,8 +1,8 @@
-# *N*otify *M*e *A*fter
+# **N**otify **M**e **A**fter
 
 ## About
 
-*N*otify *M*e *A*fter (nma) is a python package that sends a desktop notification whenever a shell process or decorated function finishes execution. This repository provides a python shell script for general use and a decorator for use within python code.
+**N**otify **M**e **A**fter (nma) is a python package that sends a desktop notification whenever a shell process or decorated function finishes execution. This repository provides a python shell script for general use and a decorator for use within python code.
 
 ## Requirements:
 
@@ -15,7 +15,21 @@
 
 ## Installation
 
-enter the `nma` directory and run `python3 -m pip install .`
+`pip install nma`
+
+or
+
+`pip3 install nma`
+
+or 
+
+`python3 -m pip install nma`
+
+or 
+
+`pip install --user nma`
+
+or some combination of these strategies.
 
 ## Examples
 

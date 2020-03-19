@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
-Name: notifyafter
+Name: nma
 Version: 0.0.1
 Summary: Sends a desktop notification when a process finishes
-Home-page: https://github.com/jrodal98/notify-after
+Home-page: https://github.com/jrodal98/nma
 Author: Jacob Rodal
 Author-email: jr6ff@virginia.edu
 License: UNKNOWN
-Description: # notify-after
+Description: # nma
         
         ## Requirements:
         
@@ -19,7 +19,7 @@ Description: # notify-after
         
         ## Installation
         
-        enter the `notify-after` directory and run `python3 -m pip install .`
+        enter the `nma` directory and run `python3 -m pip install .`
         
         ## About
         
@@ -29,13 +29,13 @@ Description: # notify-after
         
         ### In shell scripts
         
-        `notify-after "echo test"`
+        `nma "echo test"`
         
         
-        `notify-after "sudo pacman -Syu"`
+        `nma "sudo pacman -Syu"`
         
         
-        `notify-after "sleep 1; echo test"`
+        `nma "sleep 1; echo test"`
         
         or in actual scripts:
         
@@ -46,13 +46,13 @@ Description: # notify-after
             echo "nice"   
         }
         
-        notify-after my_func
+        nma my_func
         ```
         
         ### Decorator
         
         ```python
-        from notifyafter.notify_decorator import notify_after
+        from nma.notify_decorator import notify_after
         @notify_after
         def test():
             print("basic test")

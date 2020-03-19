@@ -4,15 +4,15 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="notifyafter",
-    scripts=["scripts/notify-after"],
+    name="nma",
+    scripts=["scripts/nma"],
     version="0.0.1",
     author="Jacob Rodal",
     author_email="jr6ff@virginia.edu",
     description="Sends a desktop notification when a process finishes",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/jrodal98/notify-after",
+    url="https://github.com/jrodal98/nma",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

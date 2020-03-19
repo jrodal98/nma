@@ -1,4 +1,4 @@
-#!python
+#!/usr/bin/env python3
 # Jacob Rodal (https://www.jrodal.dev) (jr6ff@virginia.edu)
 
 from nma.main import main

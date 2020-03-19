@@ -1,4 +1,4 @@
-# notify-after
+# nma
 
 ## Requirements:
 
@@ -11,7 +11,7 @@
 
 ## Installation
 
-enter the `notify-after` directory and run `python3 -m pip install .`
+enter the `nma` directory and run `python3 -m pip install .`
 
 ## About
 
@@ -21,13 +21,13 @@ This python package contains a python shell script (and decorator) that sends a 
 
 ### In shell scripts
 
-`notify-after "echo test"`
+`nma "echo test"`
 
 
-`notify-after "sudo pacman -Syu"`
+`nma "sudo pacman -Syu"`
 
 
-`notify-after "sleep 1; echo test"`
+`nma "sleep 1; echo test"`
 
 or in actual scripts:
 
@@ -38,13 +38,13 @@ my_func () {
     echo "nice"   
 }
 
-notify-after my_func
+nma my_func
 ```
 
 ### Decorator
 
 ```python
-from notifyafter.notify_decorator import notify_after
+from nma.notify_decorator import notify_after
 @notify_after
 def test():
     print("basic test")

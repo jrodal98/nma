@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+nma/__init__.py
+nma/__main__.py
+nma/exclamation-mark.png
+nma/hourglass.png
+nma/main.py
+nma/notify_decorator.py
+nma/send_notification.py
+nma.egg-info/PKG-INFO
+nma.egg-info/SOURCES.txt
+nma.egg-info/dependency_links.txt
+nma.egg-info/top_level.txt
+scripts/nma

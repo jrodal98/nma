@@ -1,7 +1,0 @@
-#!python
-# Jacob Rodal (https://www.jrodal.dev) (jr6ff@virginia.edu)
-
-from nma.main import main
-
-if __name__ == "__main__":
-    main()
